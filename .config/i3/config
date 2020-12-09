@@ -226,7 +226,7 @@ bindsym ctrl+Print exec kazam -w
 bindsym ctrl+shift+Print exec flameshot gui
 
 # FIBO LAYOUT
-exec --no-startup-id ~/scripts/i3-alternating-layout/alternating_layouts.py
+exec --no-startup-id ~/scripts/i3/alternating_layouts.py
 #
 #redshift
 exec redshift -c ~/.config/redshift/redshift.conf

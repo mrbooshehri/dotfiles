@@ -98,6 +98,9 @@ source $ZSH/oh-my-zsh.sh
  alias pbrconf="vim ~/.config/polybar/config"
  alias vimconf="vim ~/.vimrc"
 # Commands aliases
+ alias ..="cd .."
+ alias rm="rm -i"
+ alias mv="mv -i"
  alias ls="colorls --group-directories-first"
  alias ll="colorls -lA --sd --group-directories-first"
  alias tml="tmux ls"
