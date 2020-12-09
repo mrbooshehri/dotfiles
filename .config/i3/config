@@ -123,6 +123,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # assigning to workspace
 assign [class="Brave-browser"] 2
+assign [class="qutebrowser"] 2
 assign [class="Code"] 3
 assign [class="obs"] 4
 assign [class="korganizer"] 5

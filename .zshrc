@@ -97,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
  alias i3conf="vim ~/.config/i3/config"
  alias pbrconf="vim ~/.config/polybar/config"
  alias vimconf="vim ~/.vimrc"
+ alias dunstconf="vim ~/.config/dunst/dunstrc"
 # Commands aliases
  alias ..="cd .."
  alias rm="rm -i"
