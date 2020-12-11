@@ -8,17 +8,21 @@
 'b
 	/home/mhmd/bin/
 	..
-1607078423
+1607700379
 'h
 	/home/mhmd/
 	..
 1607078315
+'m
+	/media/1TB/Documents/Marmara University
+	..
+1607700235
 
 # Bookmarks:
 
 # TUI:
 al
-q0
+q1
 v2
 ov
 m-1
@@ -206,6 +210,21 @@ d/media/1TB/Documents/Marmara University/Human Resourcs/Presentation/organizaton
 d/media/1TB/Documents/Marmara University/Human Resourcs/Presentation/organizatonal changes/last
 	Human Services as Complex Organizations by Yeheskel Hasenfeld (z-lib.org).pdf
 1
+d/home/mhmd
+	Public
+6
+d/media/1TB
+	Documents
+4
+d/media/1TB/Documents
+	Marmara University
+14
+d/media/1TB/Documents/Marmara University
+	Behavioral Finance
+1
+d/media/1TB/Documents/Marmara University/Behavioral Finance
+	MBA 516_Behavioral Finance Midterm Exam.txt
+3
 d
 
 # Right window history (oldest to newest):
@@ -240,23 +259,47 @@ D/media/1TB/Documents/Marmara University/Corporate Financial Mmanagment
 	Gitman_13e_PPT
 1
 D/media/1TB/Documents/Marmara University/Corporate Financial Mmanagment/Gitman_13e_PPT
-	gitman 9 THE COST OF CAPITAL.ppt
-13
+	gitman 2. FINANCIAL INSTITUTIONS & MARKETS.ppt
+7
+D/media/1TB/Documents/Marmara University/Corporate Financial Mmanagment
+	Recordings
+2
+D/media/1TB/Documents/Marmara University/Corporate Financial Mmanagment/Recordings
+	2-2.mkv
+5
+D/media/1TB/Documents/Marmara University/Corporate Financial Mmanagment
+	Recordings
+2
+D/media/1TB/Documents/Marmara University
+	Corporate Financial Mmanagment
+2
+D/media/1TB/Documents
+	Marmara University
+14
+D/media/1TB
+	Documents
+4
+D/media
+	1TB
+1
+D/media/1TB/Documents/Marmara University
+	Corporate Financial Mmanagment
+2
 D
 
 # Command line history (oldest to newest):
-:marks
 :1
 :ض
+:marks
 :q
 
 # Search history (oldest to newest):
 /downl
-/doc
 /marma
 /hum
 /do
 /mar
+/doc
 
 # Prompt history (oldest to newest):
 
