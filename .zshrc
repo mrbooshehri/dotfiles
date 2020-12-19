@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
  alias vimconf="vim ~/.vimrc"
  alias dunstconf="vim ~/.config/dunst/dunstrc"
  alias vifmconf="vim ~/.config/vifm/vifmrc"
+ alias awsconf="vim ~/.config/awesome/rc.lua"
+ alias bspconf="vim ~/.config/bspwm/bspwmrc"
+ alias sxhconf="vim ~/.config/sxhkd/sxhkdrc"
 # Commands aliases
  alias ..="cd .."
  alias rm="rm -i"
@@ -109,10 +112,6 @@ source $ZSH/oh-my-zsh.sh
  alias tmk="tmux kill-session -t" 
  alias tomp3="~/scripts/tomp3.sh"
  alias hdd="cd /media/1TB"
- alias vlc="swallow vlc"
- alias mpv="swallow mpv"
- alias evince="swallow evince"
- alias sxiv="swallow sxiv"
 # Nipe aliases
  alias nipstr="~/scripts/nipe/nipstr.sh"
  alias nipstp="~/scripts/nipe/nipstp.sh"
