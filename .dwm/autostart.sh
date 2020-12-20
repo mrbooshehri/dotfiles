@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # status bar
-#dwmblocks &
+dwmblocks &
 
 # transparancy
 compton -f -D 1 &
@@ -21,4 +21,4 @@ korganizer &
 nm-applet &
 blueman-applet &
 variety &
-
+volumeicon &
