@@ -7,8 +7,8 @@ ARR+=("Stop Recording")
 CHOICE=$(printf '%s\n' "${ARR[@]}" | rofi -dmenu -i -p "OBS")
 
 if [ "$CHOICE" = "Start Recording" ]; then
-  	obs-studio --startrecording
 	notify-send -u critical -t 1500 "OBS" "Start recording"
+  	obs-studio --startrecording
 	exit 0
 fi
 
