@@ -42,7 +42,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 5
+    transparency = 0
 
     # The height of the entire notification.  If the height is smaller
     # than the font height and padding combined, it will be raised
@@ -55,17 +55,17 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 8
+    padding = 16
 
     # Horizontal padding.
-    horizontal_padding = 8
+    horizontal_padding = 16
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+    frame_color = "#282828"
 
     # Define a color for the separator.
     # possible values are:
@@ -163,8 +163,7 @@
     icon_position = left
 
     # Scale larger icons down to this size, set to 0 to disable
-    #max_icon_size = 48
-    max_icon_size = 80
+    max_icon_size = 60
 
     # Paths to default icons.
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -212,7 +211,7 @@
     # layout changes.
     force_xinerama = false
 
-    corner_radius = 5
+    corner_radius = 0
 
 # Experimental features that may or may not work correctly. Do not expect them
 # to have a consistent behaviour across releases.
@@ -249,26 +248,26 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#3949AB"
-    foreground = "#ffffff"
-    frame_color = "#303F9F"
-    timeout = 10
+    background = "#458588"
+    foreground = "#ebdbb2"
+    frame_color = "#83a598"
+    timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
     icon = ~/.config/dunst/warning.png
 
 [urgency_normal]
-    background = "#546E7A"
-    foreground = "#FFFAFA"
-    frame_color = "#455A64"
-    timeout = 10
+    background = "#3c3836"
+    foreground = "#ebdbb2"
+    frame_color = "#504945" 
+    timeout = 3
     # Icon for notifications with normal urgency, uncomment to enable
     icon = ~/.config/dunst/info.png
 
 [urgency_critical]
-    background = "#e53935"
-    foreground = "#ffffff"
-    frame_color = "#d32f2f"
-    timeout = 0
+    background = "#cc241d"
+    foreground = "#ebdbb2"
+    frame_color = "#fb4934"
+    timeout = 3
     # Icon for notifications with critical urgency, uncomment to enable
     icon = ~/.config/dunst/error.png
 
