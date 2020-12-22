@@ -55,10 +55,10 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 16
+    padding = 10
 
     # Horizontal padding.
-    horizontal_padding = 16
+    horizontal_padding = 14
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
@@ -82,7 +82,7 @@
     # for longer than idle_threshold seconds.
     # Set to 0 to disable.
     # Transient notifications ignore this setting.
-    idle_threshold = 120
+    idle_threshold = 30
 
     ### Text ###
 
