@@ -22,3 +22,4 @@ nm-applet &
 blueman-applet &
 variety &
 volumeicon &
+mocp -S 
