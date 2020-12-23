@@ -117,3 +117,5 @@ if ! shopt -oq posix; then
 fi
 # bare git alias
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

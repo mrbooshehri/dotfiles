@@ -21,5 +21,8 @@ korganizer &
 nm-applet &
 blueman-applet &
 variety &
+safeeyes &
 volumeicon &
+syncthing &
+kdeconnect-indicator
 mocp -S 

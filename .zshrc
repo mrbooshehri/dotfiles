@@ -127,3 +127,5 @@ source $ZSH/oh-my-zsh.sh
 
 ##[[ $- != *i* ]] && return
 ##[[ -z "$TMUX" ]] && exec tmux
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
