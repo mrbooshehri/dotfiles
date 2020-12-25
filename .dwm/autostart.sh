@@ -22,7 +22,7 @@ nm-applet &
 blueman-applet &
 variety &
 safeeyes &
-volumeicon &
 syncthing &
+megasync &
 kdeconnect-indicator
 mocp -S 

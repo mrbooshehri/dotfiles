@@ -116,7 +116,10 @@ source $ZSH/oh-my-zsh.sh
  alias nipstr="~/scripts/nipe/nipstr.sh"
  alias nipstp="~/scripts/nipe/nipstp.sh"
  alias nipstat="~/scripts/nipe/nipstat.sh"
-
+# curl
+ alias wttr="curl wttr.in"
+# others
+ alias stdic="sdcv"
 # exports
  export PATH="${PATH}:${HOME}/.local/bin/"
 
