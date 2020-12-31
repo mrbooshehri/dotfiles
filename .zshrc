@@ -122,6 +122,7 @@ source $ZSH/oh-my-zsh.sh
  alias stdic="sdcv"
 # exports
  export PATH="${PATH}:${HOME}/.local/bin/"
+ export EDITOR="vim"
 
 
 # If not running interactively, do not do anything

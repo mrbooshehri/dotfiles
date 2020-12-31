@@ -31,18 +31,24 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Shougo/unite.vim'		" search
 Plugin 'lilydjwg/colorizer'
 Plugin 'yggdroot/indentline'		" indent indicator
+Plugin 'xolox/vim-notes'		" note taking
+Plugin 'xolox/vim-misc'			" note taking
+Plugin 'xuhdev/vim-latex-live-preview'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 "---------------------------------------- gruvbox config
 let g:gruvbox_contrast_dark = 'hard'	" soft hard medium
-
+let g:gruvbox_guisp_fallback='bg'
 "---------------------------------------- my init
 syntax enable                           " Enables syntax highlighing
 colorscheme gruvbox
-highlight Normal ctermbg=Black
-highlight NonText ctermbg=Black
+"highlight Normal ctermbg=Black
+"highlight NonText ctermbg=Black
+highlight Search ctermbg=blue
+highlight SpellBad ctermbg=red
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
@@ -98,3 +104,11 @@ let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
+
+"---------------------------------------- custom keybindings
+vnoremap <C-c> "+y
+map <C-p> "+p
+
+"---------------------------------------- LaTeX preview
+autocmd Filetype tex setl updatetime=1
+let g:livepreview_previewer = 'zathura -'

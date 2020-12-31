@@ -23,6 +23,6 @@ blueman-applet &
 variety &
 safeeyes &
 syncthing &
-megasync &
+#megasync &
 kdeconnect-indicator
-mocp -S 
+#mocp -S 
