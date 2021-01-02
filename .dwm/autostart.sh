@@ -26,3 +26,5 @@ syncthing &
 #megasync &
 kdeconnect-indicator
 #mocp -S 
+# hide mouse cursor
+#unclutter -idle 1 -root

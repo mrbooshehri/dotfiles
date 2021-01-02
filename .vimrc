@@ -34,6 +34,7 @@ Plugin 'yggdroot/indentline'		" indent indicator
 Plugin 'xolox/vim-notes'		" note taking
 Plugin 'xolox/vim-misc'			" note taking
 Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'vimwiki/vimwiki'
 
 
 call vundle#end()            " required
