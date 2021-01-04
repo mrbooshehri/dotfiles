@@ -1,5 +1,4 @@
-"-------------------------------------------- Vundle init
-set nocompatible              " be iMproved, required
+"-------------------------------------------- Vundle init set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -113,3 +112,7 @@ map <C-p> "+p
 "---------------------------------------- LaTeX preview
 autocmd Filetype tex setl updatetime=1
 let g:livepreview_previewer = 'zathura -'
+
+"---------------------------------------- automations
+au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
