@@ -59,21 +59,24 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"], "Return", lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack"),
+#    Key([mod, "shift"], "Return", lazy.layout.toggle_split(),
+#        desc="Toggle between split and unsplit sides of stack"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod, "shift"], "q", lazy.window.kill(), desc="Kill focused window"),
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown qtile"),
-    Key([mod], "r", lazy.spawncmd(),
-        desc="Spawn a command using a prompt widget"),
+#    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown qtile"),
+#    Key([mod], "r", lazy.spawncmd(),
+#        desc="Spawn a command using a prompt widget"),
+
+    # Rofi
+    Key([mod], "d", lazy.spawn("dmenu_run"), desc="app launcer"),
 ]
 
-groups = [Group(i) for i in "asdfuiop"]
+groups = [Group(i) for i in "1234567890"]
 
 for i in groups:
     keys.extend([
@@ -91,31 +94,31 @@ for i in groups:
     ])
 
 layouts = [
-    layout.Max(),
-    layout.Stack(num_stacks=2),
+     layout.Tile(),
+     layout.Max(),
+     layout.Columns(),
+    #layout.Stack(num_stacks=2),
     # Try more layouts by unleashing below layouts.
     # layout.Bsp(),
-    # layout.Columns(),
     # layout.Matrix(),
     # layout.MonadTall(),
     # layout.MonadWide(),
     # layout.RatioTile(),
-    # layout.Tile(),
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
 
 widget_defaults = dict(
-    font='sans',
-    fontsize=12,
-    padding=3,
+    font='Open Sans',
+    fontsize=14,
+    padding=4,
 )
 extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.CurrentLayout(),
                 widget.GroupBox(),
@@ -127,8 +130,6 @@ screens = [
                     },
                     name_transform=lambda name: name.upper(),
                 ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
                 widget.QuickExit(),
