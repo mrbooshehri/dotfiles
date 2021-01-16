@@ -16,7 +16,7 @@ conky.config = {
 	use_xft = true,
 	font = 'Hack Nerd Font:size=11',
 	gap_x = 14,
-	gap_y = 49,
+	gap_y = 42,
 	no_buffers = true,
 	minimum_width = 160, minimum_height = 5,
 	maximum_width = 400,

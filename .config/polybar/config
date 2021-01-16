@@ -479,7 +479,7 @@ menu-2-1 = 襤 |
 menu-2-1-exec = poweroff
 
 menu-3-0 = 
-menu-3-0-exec = i3-msg exit
+menu-3-0-exec = i3-msg exit || bspc quit
 menu-3-1 =  |
 menu-3-1-exec = menu-open-0
 
