@@ -5,6 +5,6 @@ case $menu in
 "Reboot") shutdown -r now ;;
 "Suspend") systemctl suspend ;;
 "Logout") killall dwm;;
-"Lock") slock ;;
+"Lock") betterlockscreen -l blur;;
 *) exit ;;
 esac
