@@ -1,3 +1,10 @@
+" __  __      _                     _          _          _
+"|  \/  |_ __| |__   ___   ___  ___| |__   ___| |__  _ __(_)
+"| |\/| | '__| '_ \ / _ \ / _ \/ __| '_ \ / _ \ '_ \| '__| |
+"| |  | | |  | |_) | (_) | (_) \__ \ | | |  __/ | | | |  | |
+"|_|  |_|_|  |_.__/ \___/ \___/|___/_| |_|\___|_| |_|_|  |_|
+"
+"
 "-------------------------------------------- Vundle init set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -34,7 +41,7 @@ Plugin 'xolox/vim-notes'		" note taking
 Plugin 'xolox/vim-misc'			" note taking
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
-
+Plugin 'shime/vim-livedown'		" markdown preview
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,6 +49,7 @@ filetype plugin indent on    " required
 "---------------------------------------- gruvbox config
 let g:gruvbox_contrast_dark = 'hard'	" soft hard medium
 let g:gruvbox_guisp_fallback='bg'
+
 "---------------------------------------- my init
 syntax enable                           " Enables syntax highlighing
 colorscheme gruvbox
@@ -77,11 +85,11 @@ set noshowmode                          " We don't need to see things like -- IN
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
 "---------------------------------------- nerdtree
 map <silent> <C-o> :NERDTreeFocus<CR>
 
@@ -93,17 +101,14 @@ let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-
-" Switch to your current theme
-"let g:airline_theme = 'onedark'
 let g:airline_theme = 'gruvbox'
+
 "---------------------------------------- lightline config
 
 " enable powerline fonts
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
-
 
 "---------------------------------------- custom keybindings
 vnoremap <C-c> "+y
@@ -116,3 +121,5 @@ let g:livepreview_previewer = 'zathura -'
 "---------------------------------------- automations
 au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
+"---------------------------------------- vimwiki
