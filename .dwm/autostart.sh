@@ -14,7 +14,7 @@ setxkbmap -option 'grp:alt_shift_toggle'
 conky &
 
 # redshift
-redshift -c ~/.config/redshift/redshift.conf &
+redshift -c ~/.config/redshift/redshift.conf > /dev/null 2>&1 &
 
 # application
 korganizer &
