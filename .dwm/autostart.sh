@@ -3,6 +3,9 @@
 # status bar
 dwmblocks &
 
+# android studio hack
+wmname LG3D
+
 # transparancy
 compton -f -D 1 &
 

@@ -42,6 +42,7 @@ Plugin 'xolox/vim-misc'			" note taking
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'vimwiki/vimwiki'
 Plugin 'shime/vim-livedown'		" markdown preview
+Plugin 'neoclide/coc.nvim', {'branch': 'release'} " COC 
 
 call vundle#end()            " required
 filetype plugin indent on    " required
